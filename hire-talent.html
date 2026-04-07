@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Talent — Anvikshi Solutions</title>
+  <meta name="description" content="Partner with Anvikshi Solutions for strategic hiring and talent acquisition across industries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="page-form.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">ANVIKSHI <span class="logo-accent">SOLUTIONS</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#pillars">Services</a></li>
+        <li><a href="index.html#industries">Industries</a></li>
+        <li><a href="index.html#careers">Careers</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-tag">For Employers</p>
+      <h1 class="section-title">Hire Top Talent</h1>
+      <p class="section-subtitle">Tell us about your hiring needs and our team will connect you with the right candidates.</p>
+    </div>
+  </section>
+
+  <!-- ===== FORM ===== -->
+  <section class="page-form-section">
+    <div class="container">
+      <form class="page-form-card" id="hireForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" placeholder="Acme Inc." required />
+          </div>
+          <div class="form-group">
+            <label for="contactPerson">Contact Person</label>
+            <input type="text" id="contactPerson" name="contactPerson" placeholder="Jane Doe" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="domain">Domain / Industry</label>
+          <select id="domain" name="domain" required>
+            <option value="" disabled selected>Select an industry</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Infrastructure">Infrastructure</option>
+            <option value="Finance">Finance</option>
+            <option value="Support Services">Support Services</option>
+            <option value="Manufacturing">Manufacturing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills / Requirements</label>
+          <input type="text" id="skills" name="skills" placeholder="e.g. React, Node.js, Python, Cloud Architecture" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Describe your hiring requirements in detail..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">ANVIKSHI <span class="logo-accent">SOLUTIONS</span></span>
+        </a>
+        <p>Insight. Innovate. Impact.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#pillars">Services</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="index.html#pillars">Talent Acquisition</a>
+        <a href="#">IT &amp; Managed Services</a>
+        <a href="#">Healthcare &amp; Global Support</a>
+      </div>
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="#" class="social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><span>Instagram</span></a>
+        <a href="#" class="social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X (Twitter)</span></a>
+        <a href="#" class="social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span>LinkedIn</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Anvikshi Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('mobile-open');
+      document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
+    });
+  </script>
+  <script src="form-handler.js"></script>
+  <script>
+    initFormHandler({
+      formId: 'hireForm',
+      subjectPrefix: 'Hiring Requirement',
+      nameField: 'companyName',
+      successMessage: 'Thank you. Our team will contact you regarding your hiring requirements.',
+      requiredFields: [
+        { name: 'companyName', label: 'Company Name', type: 'text' },
+        { name: 'contactPerson', label: 'Contact Person', type: 'text' },
+        { name: 'email', label: 'Email', type: 'email' },
+        { name: 'mobile', label: 'Mobile Number', type: 'tel' },
+        { name: 'domain', label: 'Domain / Industry', type: 'text' },
+        { name: 'skills', label: 'Skills / Requirements', type: 'text' },
+        { name: 'message', label: 'Message', type: 'text' }
+      ]
+    });
+  </script>
+</body>
+</html>

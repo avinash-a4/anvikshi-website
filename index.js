@@ -90,30 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  /* ---------- CONTACT FORM ---------- */
-  const contactForm = document.getElementById('contactForm');
-  const formSuccess = document.getElementById('formSuccess');
-
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Basic validation
-    const name    = contactForm.querySelector('#name').value.trim();
-    const email   = contactForm.querySelector('#email').value.trim();
-    const message = contactForm.querySelector('#message').value.trim();
-
-    if (!name || !email || !message) {
-      return;
-    }
-
-    // Show success
-    formSuccess.classList.add('show');
-    contactForm.reset();
-
-    setTimeout(() => {
-      formSuccess.classList.remove('show');
-    }, 5000);
-  });
+  /* ---------- CONTACT FORM (handled by form-handler.js) ---------- */
 
   /* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
   const sections = document.querySelectorAll('section[id]');
