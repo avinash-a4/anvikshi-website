@@ -368,6 +368,15 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   margin-bottom: 24px;
   text-transform: uppercase;
 }
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: 500;
+  color: var(--orange);
+  margin-bottom: 20px;
+  line-height: 1.4;
+  text-transform: none;
+}
 .hero-desc {
   font-size: 17px;
   color: rgba(255,255,255,0.75);
@@ -798,6 +807,13 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   font-size: 15px;
 }
 .contact-item svg { color: var(--orange); flex-shrink: 0; }
+.contact-serving {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--gray-400);
+  font-style: italic;
+  line-height: 1.6;
+}
 
 /* Form */
 .contact-form {
@@ -936,6 +952,12 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
 .footer-bottom p {
   color: rgba(255,255,255,0.35);
   font-size: 13px;
+}
+.footer-seo {
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.22);
+  letter-spacing: 0.5px;
 }
 
 /* ===================================================
