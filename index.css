@@ -719,12 +719,25 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
   margin-top: 48px;
 }
 .partner-logo {
   flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partner-label {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .partner-logo img {
   height: 140px;
@@ -807,6 +820,12 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   font-size: 15px;
 }
 .contact-item svg { color: var(--orange); flex-shrink: 0; }
+.contact-item a {
+  color: var(--gray-600);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-item a:hover { color: var(--orange); }
 .contact-serving {
   margin-top: 12px;
   font-size: 14px;
