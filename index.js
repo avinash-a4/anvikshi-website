@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('mobile-open');
+    navbar.classList.toggle('menu-open');
     document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
   });
 
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (navLinks.classList.contains('mobile-open')) {
         hamburger.classList.remove('active');
         navLinks.classList.remove('mobile-open');
+        navbar.classList.remove('menu-open');
         document.body.style.overflow = '';
       }
     });
