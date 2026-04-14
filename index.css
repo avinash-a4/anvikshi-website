@@ -369,7 +369,7 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   text-transform: uppercase;
 }
 .hero-title.hero-title-sm {
-  font-size: clamp(28px, 3.8vw, 42px);
+  font-size: clamp(32px, 4.4vw, 48px);
 }
 .hero-subtitle {
   font-family: var(--font-heading);
@@ -1064,4 +1064,189 @@ button, input, textarea { font-family: inherit; font-size: inherit; }
   .partners-row { gap: 20px; }
   .partner-placeholder { width: 110px; height: 50px; }
   .contact-form { padding: 24px; }
+}
+
+/* ===================================================
+   JOBS PAGE
+   =================================================== */
+.jobs-section {
+  padding: 80px 0;
+  background-color: var(--off-white);
+}
+.jobs-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 12px 24px;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  color: var(--gray-600);
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.filter-btn.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+.job-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  transition: all 0.4s var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-color: rgba(255,107,53,0.1);
+}
+.job-category {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(255, 107, 53, 0.1);
+  color: var(--orange);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.job-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.job-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--gray-500);
+}
+.job-meta svg {
+  color: var(--orange);
+}
+.job-desc {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+}
+.empty-jobs-msg {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray-500);
+  padding: 40px 0;
+  grid-column: 1 / -1;
+}
+
+/* Modal Styling */
+.job-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 25, 50, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.job-modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+.job-modal-content {
+  background: var(--white);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  padding: 32px;
+  position: relative;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.job-modal-overlay.open .job-modal-content {
+  transform: translateY(0);
+}
+.job-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: var(--gray-500);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+.job-modal-close:hover {
+  color: var(--navy);
+}
+.modal-formatted-content h4 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  margin: 20px 0 8px;
+  font-size: 16px;
+}
+.modal-formatted-content p, .modal-formatted-content ul {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+.modal-formatted-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.job-modal-footer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
 }

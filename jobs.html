@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Positions — Anvikshi Solutions</title>
+  <meta name="description" content="Explore current career opportunities across IT and Non-IT domains at Anvikshi Solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">ANVIKSHI <span class="logo-accent">SOLUTIONS</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#pillars">Services</a></li>
+        <li><a href="index.html#industries">Industries</a></li>
+        <li><a href="jobs.html" class="active">Jobs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="section-title">Open Positions</h1>
+      <p class="section-subtitle">Explore current opportunities across IT and Non-IT domains.</p>
+    </div>
+  </section>
+
+  <!-- ===== JOBS SECTION ===== -->
+  <section class="jobs-section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="jobs-filters">
+        <button class="filter-btn active" data-filter="all">All Jobs</button>
+        <button class="filter-btn" data-filter="it">IT Jobs</button>
+        <button class="filter-btn" data-filter="non-it">Non-IT Jobs</button>
+      </div>
+
+      <!-- Jobs Grid -->
+      <div id="emptyStateMsg" class="empty-jobs-msg" style="display: none;">
+        <p>No IT openings available currently.</p>
+      </div>
+
+      <div class="jobs-grid" id="jobsGrid">
+
+        <!-- JOB 1 -->
+        <div class="job-card" data-category="non-it">
+          <div class="job-category" style="background: rgba(30, 58, 138, 0.1); color: var(--navy)">Non-IT Jobs</div>
+          <h3 class="job-title">Rebar Detailer – RebarCAD</h3>
+          <div class="job-meta">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hyderabad</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> 1–5 Years</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Engineering / Detailing</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full Time</span>
+          </div>
+          <p class="job-desc">Responsible for preparing reinforcement drawings, bar bending schedules (BBS), and rebar placing plans using RebarCAD while coordinating with structural engineers and project teams.</p>
+          
+          <!-- Hidden details payload for modal -->
+          <div class="job-details-payload" style="display: none;">
+            <h4>Role Overview</h4>
+            <p>You will play a pivotal role in drafting precision structural details and BBS diagrams. Attention to structural codes and seamless collaboration with on-site elements are central to this position.</p>
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Prepare highly accurate RebarCAD placement drawings.</li>
+              <li>Develop Bar Bending Schedules (BBS) meeting international standards.</li>
+              <li>Collaborate closely with structural engineers to resolve constructability conflicts.</li>
+            </ul>
+            <h4>Skills & Qualifications</h4>
+            <ul>
+              <li>Proficiency in RebarCAD and AutoCAD platforms.</li>
+              <li>Strong comprehension of civil structural drawings.</li>
+            </ul>
+            <h4>Education</h4>
+            <p>Diploma or Bachelor’s Degree in Civil Engineering or related field.</p>
+            <h4>Preferred Experience</h4>
+            <p>1 to 5 years specifically handling RC detailing projects ideally for global markets.</p>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-outline btn-view-details">View Details</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezjVftbPcmrcHyykA9C-gxbkPp7THzcZNUzPa5R44m7F9nfA/viewform?usp=publish-editor" class="btn btn-primary" target="_blank" rel="noopener">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- JOB 2 -->
+        <div class="job-card" data-category="non-it">
+          <div class="job-category" style="background: rgba(30, 58, 138, 0.1); color: var(--navy)">Non-IT Jobs</div>
+          <h3 class="job-title">Senior Rebar Estimator</h3>
+          <div class="job-meta">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hyderabad</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Experienced Candidates</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Estimation / Civil Engineering</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Full Time</span>
+          </div>
+          <p class="job-desc">Responsible for preparing rebar quantity takeoffs and estimates for US/Canadian construction projects using industry-standard estimation software.</p>
+
+          <div class="job-details-payload" style="display: none;">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Analyze contract drawings, specifications, and addendums to determine scope of rebar estimation.</li>
+              <li>Prepare accurate material quantity takeoffs and cost estimates for concrete reinforcement.</li>
+              <li>Ensure output adheres to US/Canadian codes and client specifications.</li>
+            </ul>
+            <h4>Required Skills</h4>
+            <ul>
+              <li>Expertise using leading estimation software (e.g., aSa, Soule, RebarCAD).</li>
+              <li>Strong numerical evaluation capabilities and high attention to detail.</li>
+            </ul>
+            <h4>Preferred Qualifications</h4>
+            <ul>
+              <li>Prior experience estimating specifically for overseas (North America) commercial and infrastructural projects.</li>
+            </ul>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-outline btn-view-details">View Details</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezjVftbPcmrcHyykA9C-gxbkPp7THzcZNUzPa5R44m7F9nfA/viewform?usp=publish-editor" class="btn btn-primary" target="_blank" rel="noopener">Apply Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Modal Overlay -->
+  <div class="job-modal-overlay" id="jobModal">
+    <div class="job-modal-content">
+      <button class="job-modal-close" id="jobModalClose" aria-label="Close modal">&times;</button>
+      <div id="modalBody"></div>
+      <div class="job-modal-footer">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezjVftbPcmrcHyykA9C-gxbkPp7THzcZNUzPa5R44m7F9nfA/viewform?usp=publish-editor" class="btn btn-primary" target="_blank" rel="noopener" style="width:100%; text-align:center;">Apply Now for this Role</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">ANVIKSHI <span class="logo-accent">SOLUTIONS</span></span>
+        </a>
+        <p>Insight. Innovate. Impact.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#pillars">Services</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="index.html#pillars">Talent Acquisition</a>
+        <a href="index.html#pillars">IT &amp; Managed Services</a>
+        <a href="index.html#pillars">Healthcare &amp; Global Support</a>
+      </div>
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/anvikshi.solutions?igsh=MTBqYzN5aXYxNG8zag==" class="social-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/share/1AbF8apWWf/" class="social-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/company/anvikshi-solutions/" class="social-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Anvikshi Solutions. All rights reserved.</p>
+      <p class="footer-seo">Recruitment Agency in Hyderabad | IT & Non-IT Hiring Services | Staffing Solutions Company India | Executive Search Firm | Placement Consultancy Hyderabad</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('mobile-open');
+      document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
+    });
+
+    // Jobs Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const jobCards = document.querySelectorAll('.job-card');
+    const emptyStateMsg = document.getElementById('emptyStateMsg');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        jobCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show empty message if nothing matches
+        if (visibleCount === 0) {
+          emptyStateMsg.style.display = 'block';
+        } else {
+          emptyStateMsg.style.display = 'none';
+        }
+      });
+    });
+
+    // Modal Logic
+    const jobModal = document.getElementById('jobModal');
+    const jobModalClose = document.getElementById('jobModalClose');
+    const modalBody = document.getElementById('modalBody');
+    const viewButtons = document.querySelectorAll('.btn-view-details');
+
+    viewButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.job-card');
+        const title = card.querySelector('.job-title').innerText;
+        const metaHTML = card.querySelector('.job-meta').innerHTML;
+        const detailsHTML = card.querySelector('.job-details-payload').innerHTML;
+
+        modalBody.innerHTML = `
+          <h2 style="font-family:var(--font-heading); color:var(--navy); margin-bottom:12px;">${title}</h2>
+          <div class="job-meta" style="margin-bottom:24px;">${metaHTML}</div>
+          <div class="modal-formatted-content">${detailsHTML}</div>
+        `;
+        
+        jobModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    jobModalClose.addEventListener('click', () => {
+      jobModal.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+
+    jobModal.addEventListener('click', (e) => {
+      if (e.target === jobModal) {
+        jobModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+
+  </script>
+</body>
+</html>
